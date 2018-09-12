@@ -5,7 +5,8 @@ using UnityEngine;
 public class P1Movement : MonoBehaviour {
 
     private Rigidbody2D rb;
-    public float speed;
+    
+	public static float speedP1;
 	public static int healthP1;
     
 	// Use this for initialization
@@ -13,6 +14,7 @@ public class P1Movement : MonoBehaviour {
         rb = GetComponent <Rigidbody2D>(); 
 		healthP1 = 3;
         Time.timeScale = 1f;
+		speedP1 = 8;
 	}
 	
 	// Update is called once per frame
@@ -20,12 +22,14 @@ public class P1Movement : MonoBehaviour {
 		if (healthP1 <= 0) {
 			Destroy (gameObject);
 		}
+
+		
 	}
 
     void FixedUpdate()
     {
 		
-     rb.velocity = new Vector2(Input.GetAxis("HorizontalP1") * speed, Input.GetAxis("VerticalP1") * speed);   
+     rb.velocity = new Vector2(Input.GetAxis("HorizontalP1") * speedP1, Input.GetAxis("VerticalP1") * speedP1);   
         
     }
 
