@@ -6181,9 +6181,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   livesP2:
-  - {fileID: 1691903927}
-  - {fileID: 1108437432}
   - {fileID: 1292333668}
+  - {fileID: 1108437432}
+  - {fileID: 1691903927}
 --- !u!4 &1941242877
 Transform:
   m_ObjectHideFlags: 0
