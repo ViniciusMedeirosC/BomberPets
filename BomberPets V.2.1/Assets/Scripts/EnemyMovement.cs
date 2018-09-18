@@ -15,6 +15,8 @@ public class EnemyMovement : MonoBehaviour {
         if (coll.gameObject.CompareTag("Explosion"))
         {
             Destroy(gameObject);
+            EnemyCounter.enemysQuant = EnemyCounter.enemysQuant - 1;
+            Debug.Log(EnemyCounter.enemysQuant);
         }
 
     }

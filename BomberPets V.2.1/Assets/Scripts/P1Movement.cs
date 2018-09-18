@@ -21,6 +21,7 @@ public class P1Movement : MonoBehaviour {
 	void Update () {
 		if (healthP1 <= 0) {
 			Destroy (gameObject);
+            SingleVictoryManager.defeat = true;
 		}
 
 		
