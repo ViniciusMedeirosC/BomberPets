@@ -5,7 +5,7 @@ using UnityEngine;
 public class ExpDamage : MonoBehaviour {
 
 	public static int damage;
-	public AudioSource expSound;
+	public static AudioSource expSound;
 
 	// Use this for initialization
 	void Start () {
