@@ -13,23 +13,26 @@ public class SingleVictoryManager : MonoBehaviour {
     // Use this for initialization
     void Start ()
     {
-        canvasVictory.SetActive(false);
-        canvasDefeat.SetActive(false);
         victory = false;
         defeat = false;
+        canvasVictory.SetActive(false);
+        canvasDefeat.SetActive(false);
+        Debug.Log("desativa etc");
+        
 	}
 	
 	// Update is called once per frame
 	void Update ()
     {
-        if (victory)
+        if (victory == true)
         {
-            //canvasVictory.SetActive(true);
-            Debug.Log("vitoriaaa");
+            canvasVictory.SetActive(true);
         }
-        else if (defeat)
+        if (defeat == true)
         {
-            //canvasDefeat.SetActive(true);
+            canvasDefeat.SetActive(true);
         }
+
+        
 	}
 }

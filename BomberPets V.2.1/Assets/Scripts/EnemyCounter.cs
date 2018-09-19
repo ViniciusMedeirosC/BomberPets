@@ -9,7 +9,7 @@ public class EnemyCounter : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        enemysQuant = 0;  
+        enemysQuant = 6;  
     }
 	
 	// Update is called once per frame
