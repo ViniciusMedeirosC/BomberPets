@@ -1,8 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class P1Movement : MonoBehaviour {
+using UnityEngine.Networking;
+public class P1Movement : NetworkBehaviour {
 
     private Rigidbody2D rb;
     
@@ -24,7 +24,10 @@ public class P1Movement : MonoBehaviour {
             SingleVictoryManager.defeat = true;
 		}
 
-		
+		if (!isLocalPlayer)
+        {
+            return;
+        }
 	}
 
     void FixedUpdate()

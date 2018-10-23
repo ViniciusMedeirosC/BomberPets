@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Networking;
 
-public class P2Movement : MonoBehaviour {
+public class P2Movement : NetworkBehaviour {
 
     private Rigidbody2D rb;
     public static float speedP2;
@@ -20,6 +21,11 @@ public class P2Movement : MonoBehaviour {
 		if (healthP2 <= 0) {
 			Destroy (gameObject);
 		}
+
+		if (!isLocalPlayer)
+        {
+            return;
+        }
 	}
 
 	void FixedUpdate()
