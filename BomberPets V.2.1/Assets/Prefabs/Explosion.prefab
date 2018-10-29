@@ -241,7 +241,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a946b8ab7c8969245a90550c81d02a62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  expSound: {fileID: 82380372063132524}
+  expSound2: {fileID: 82380372063132524}
 --- !u!114 &114842016678115826
 MonoBehaviour:
   m_ObjectHideFlags: 1

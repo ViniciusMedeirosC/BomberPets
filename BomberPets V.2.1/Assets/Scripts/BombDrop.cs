@@ -5,8 +5,13 @@ using UnityEngine;
 public class BombDrop : MonoBehaviour {
 
     [SerializeField]private GameObject bombPrefab;
+	public AudioSource lalala;
 
 	// Update is called once per frame
+
+	void Start(){
+		ExpDamage.expSound = lalala;
+	}
 	void Update () {
 		if (Input.GetKeyDown(KeyCode.Space))
 		{

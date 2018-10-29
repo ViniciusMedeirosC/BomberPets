@@ -2,13 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class ExpDamage : MonoBehaviour {
 
 	public static int damage;
 	public static AudioSource expSound;
+	public AudioSource expSound2;
 
 	// Use this for initialization
 	void Start () {
+	    expSound = expSound2;
 		damage = 1;
 		expSound.Play();
 	}
