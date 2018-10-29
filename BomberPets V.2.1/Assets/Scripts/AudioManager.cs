@@ -28,6 +28,16 @@ public class AudioManager : MonoBehaviour {
 
     }
 
+    public void PauseUnpause()
+    {
+        if(Institucional.musicM.isPlaying)
+        {
+              Institucional.musicM.Pause();
+        }
+        else{
+              Institucional.musicM.UnPause();
+        }
+    }
     
 
 
