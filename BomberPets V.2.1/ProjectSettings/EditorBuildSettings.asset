@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Multip Local.unity
     guid: 5fc9fbf3ac8e4f64eb352083d8ba3ee7
+  - enabled: 1
+    path: Assets/Scenes/Instrucoes.unity
+    guid: 70c5eb2a2da55e746a7168e509d1ac9f
   m_configObjects: {}
