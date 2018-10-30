@@ -6,8 +6,11 @@ public class Explosion : MonoBehaviour {
 
 	public GameObject expPrefab;
 
+
 	void OnDestroy()
 	{
         Instantiate(expPrefab, transform.position, Quaternion.identity);
 	}
+
+
 }

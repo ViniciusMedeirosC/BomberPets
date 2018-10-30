@@ -28,4 +28,6 @@ public class ExpDamage : MonoBehaviour {
 			Destroy(coll.gameObject);
 		}
 	}
+
+	
 }
