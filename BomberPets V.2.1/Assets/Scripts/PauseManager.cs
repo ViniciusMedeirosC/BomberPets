@@ -8,9 +8,10 @@ public class PauseManager : MonoBehaviour {
     public GameObject canvasPausa;
 
 	// Use this for initialization
-	void Start () {
-        canvasPausa.SetActive(false);
-    }
+	// void Start () {
+    //     canvasPausa.SetActive(false);
+
+    // }
 	
 	// Update is called once per frame
 	void Update () {
@@ -19,8 +20,9 @@ public class PauseManager : MonoBehaviour {
 
     public void PauseScene()
     {
-        Time.timeScale = 0f;
+        
         canvasPausa.SetActive(true);
+        Time.timeScale = 0f;
     }
 
     public void ResumeScene()
