@@ -5,19 +5,20 @@ using UnityEngine;
 public class BombDrop : MonoBehaviour {
 
     [SerializeField]private GameObject bombPrefab;
-	public AudioSource lalala;
+	public AudioSource expEffect;
 	private bool canDrop = true;
 
 	// Update is called once per frame
 
 	void Start(){
-		ExpDamage.expSound = lalala;
+		ExpDamage.expSound = expEffect;
 	}
 	void Update () {
 		if (Input.GetKeyDown(KeyCode.Space) && canDrop)
 		{
 			Vector2 posi = transform.position;
 			Instantiate(bombPrefab, posi, Quaternion.identity); 
+			StartCoroutine("TimeToDrop");
 		}
 		
 	}
