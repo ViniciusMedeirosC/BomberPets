@@ -21,14 +21,14 @@ public class PowerupSpeed : MonoBehaviour {
 		if (coll.gameObject.CompareTag("P1"))
 		{
 			Debug.Log("mais rapido");
-			P1Movement.speedP1 = P1Movement.speedP1 + 10;
+			P1LocalMove.speedP1 = P1LocalMove.speedP1 + 10;
 			Destroy(gameObject);
 		}
 
 		if (coll.gameObject.CompareTag("P2"))
 		{
 			Debug.Log("mais rapido");
-			P2Movement.speedP2 = P2Movement.speedP2 + 10;
+			P2LocalMove.speedP2 = P2LocalMove.speedP2 + 10;
 			Destroy(gameObject);
 		}
 	} 
