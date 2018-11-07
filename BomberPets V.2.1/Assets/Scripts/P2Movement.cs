@@ -14,6 +14,8 @@ public class P2Movement : NetworkBehaviour {
 		rb = GetComponent <Rigidbody2D>(); 
 		healthP2 = 3;
 		speedP2 = 8;
+		        Time.timeScale = 1f;
+
 	}
 	
 	// Update is called once per frame
