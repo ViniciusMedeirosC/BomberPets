@@ -17,6 +17,8 @@ public class BombDrop : MonoBehaviour {
 		if (Input.GetKeyDown(KeyCode.Space) && canDrop)
 		{
 			Vector2 posi = transform.position;
+			posi.x = Mathf.Round (posi.x);
+			posi.y = Mathf.Round (posi.y);
 			Instantiate(bombPrefab, posi, Quaternion.identity); 
 			StartCoroutine("TimeToDrop");
 		}
