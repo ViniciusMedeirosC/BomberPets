@@ -11,7 +11,7 @@ public class P2LocalMove : MonoBehaviour {
 	void Start () {
 		rb = GetComponent <Rigidbody2D>(); 
 		healthP2 = 3;
-		speedP2 = 3;
+		speedP2 = 8;
 	}
 	
 	// Update is called once per frame
@@ -27,24 +27,24 @@ public class P2LocalMove : MonoBehaviour {
 	{
         //rb.velocity = new Vector2(Input.GetAxis("HorizontalP2") * speedP2, Input.GetAxis("VerticalP2") * speedP2);
 
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
-        {
-            rb.velocity = new Vector2(-speedP2, 0);
-        }
+     //   if (Input.GetKeyDown(KeyCode.LeftArrow))
+     //   {
+     //       rb.velocity = new Vector2(-speedP2, 0);
+     //   }
 
-        else if (Input.GetKeyDown(KeyCode.RightArrow))
-        {
-            rb.velocity = new Vector2(speedP2, 0);
-        }
+     //   else if (Input.GetKeyDown(KeyCode.RightArrow))
+     //   {
+      //      rb.velocity = new Vector2(speedP2, 0);
+     //   }
 
-        else if (Input.GetKeyDown(KeyCode.UpArrow))
-        {
-            rb.velocity = new Vector2(0, speedP2);
-        }
-        else if (Input.GetKeyDown(KeyCode.DownArrow))
-        {
-            rb.velocity = new Vector2(0, - speedP2);
-        }
+   //     else if (Input.GetKeyDown(KeyCode.UpArrow))
+   //     {
+   //         rb.velocity = new Vector2(0, speedP2);
+   //     }
+    //    else if (Input.GetKeyDown(KeyCode.DownArrow))
+    //    {
+    //        rb.velocity = new Vector2(0, - speedP2);
+     //   }
 
 
        //if(rb.velocity == 0)
@@ -54,6 +54,10 @@ public class P2LocalMove : MonoBehaviour {
 
 
        // }
+
+
+
+		rb.velocity = new Vector2(Input.GetAxis("HorizontalP2") * speedP2, Input.GetAxis("VerticalP2") * speedP2);   
 
     }
 

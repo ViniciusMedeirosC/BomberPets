@@ -20,7 +20,7 @@ public class BombDrop : MonoBehaviour {
 	void Update () {
 		if (Input.GetKeyDown(KeyCode.Space) && canDrop)
 		{
-			Vector3 posi = transform.position;
+			Vector3 posi = transform.position; 
             Vector3Int cell = tilemap1.WorldToCell(posi);
             Vector3 cellCenter = tilemap1.GetCellCenterWorld(cell);
 			//posi.x = Mathf.Round (posi.x);  
