@@ -14,7 +14,7 @@ public class P1HealthManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		print("vida p1: " + P1LocalMove.healthP1);
+//		print("vida p1: " + P1LocalMove.healthP1);
 		if (P1LocalMove.healthP1 == 2) {
 			//Destroy (livesP1 [2]);
 			livesP1 [2].SetActive(false);

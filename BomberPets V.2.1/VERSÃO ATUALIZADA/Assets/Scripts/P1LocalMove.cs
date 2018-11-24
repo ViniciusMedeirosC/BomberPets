@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 public class P1LocalMove : MonoBehaviour {
 
@@ -8,13 +9,15 @@ public class P1LocalMove : MonoBehaviour {
     
 	public static float speedP1;
 	public static int healthP1;
+	public Tilemap tilemap4;
+
 
 	// Use this for initialization
 	void Start () {
 		rb = GetComponent <Rigidbody2D>(); 
 		healthP1 = 3;
         Time.timeScale = 1f;
-		speedP1 = 8;
+		speedP1 = 1;
 	}
 	
 	// Update is called once per frame
@@ -27,8 +30,48 @@ public class P1LocalMove : MonoBehaviour {
 
 	void FixedUpdate()
     {
-		
-     rb.velocity = new Vector2(Input.GetAxis("HorizontalP1") * speedP1, Input.GetAxis("VerticalP1") * speedP1);   
+
+
+
+		if (Input.GetKeyDown(KeyCode.A))
+		{
+			Vector2 posi = transform.position;
+			Vector3Int cell = tilemap4.WorldToCell(posi);
+			Vector3 cellCenter = tilemap4.GetCellCenterWorld(cell);
+			transform.position = cellCenter;
+			rb.velocity = new Vector2(-speedP1, 0);
+		}
+
+		else if (Input.GetKeyDown(KeyCode.D))
+		{
+			Vector2 posi = transform.position;
+			Vector3Int cell = tilemap4.WorldToCell(posi);
+			Vector3 cellCenter = tilemap4.GetCellCenterWorld(cell);
+			transform.position = cellCenter;
+			rb.velocity = new Vector2(speedP1, 0);
+		}
+
+		else if (Input.GetKeyDown(KeyCode.W))
+		{
+			Vector2 posi = transform.position;
+			Vector3Int cell = tilemap4.WorldToCell(posi);
+			Vector3 cellCenter = tilemap4.GetCellCenterWorld(cell);
+			transform.position = cellCenter;
+			rb.velocity = new Vector2(0, speedP1);
+		}
+		else if (Input.GetKeyDown(KeyCode.S))
+		{
+			Vector2 posi = transform.position;
+			Vector3Int cell = tilemap4.WorldToCell(posi);
+			Vector3 cellCenter = tilemap4.GetCellCenterWorld(cell);
+			transform.position = cellCenter;
+			rb.velocity = new Vector2(0, - speedP1);
+		}
+
+
+
+
+    // rb.velocity = new Vector2(Input.GetAxis("HorizontalP1") * speedP1, Input.GetAxis("VerticalP1") * speedP1);   
         
     }
 

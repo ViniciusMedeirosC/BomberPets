@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 public class P2LocalMove : MonoBehaviour {
 
@@ -8,10 +9,12 @@ public class P2LocalMove : MonoBehaviour {
 	 private Rigidbody2D rb;
     public static float speedP2;
 	public static int healthP2;
+	public Tilemap tilemap3;
+
 	void Start () {
 		rb = GetComponent <Rigidbody2D>(); 
 		healthP2 = 3;
-		speedP2 = 8;
+		speedP2 = 3;
 	}
 	
 	// Update is called once per frame
@@ -25,40 +28,64 @@ public class P2LocalMove : MonoBehaviour {
 
 	void FixedUpdate()
 	{
-        //rb.velocity = new Vector2(Input.GetAxis("HorizontalP2") * speedP2, Input.GetAxis("VerticalP2") * speedP2);
+       // rb.velocity = new Vector2(Input.GetAxis("HorizontalP2") * speedP2, Input.GetAxis("VerticalP2") * speedP2);
 
-     //   if (Input.GetKeyDown(KeyCode.LeftArrow))
-     //   {
-     //       rb.velocity = new Vector2(-speedP2, 0);
-     //   }
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+			Vector2 posi = transform.position;
+			Vector3Int cell = tilemap3.WorldToCell(posi);
+			Vector3 cellCenter = tilemap3.GetCellCenterWorld(cell);
+			transform.position = cellCenter;
+            rb.velocity = new Vector2(-speedP2, 0);
+        }
 
-     //   else if (Input.GetKeyDown(KeyCode.RightArrow))
-     //   {
-      //      rb.velocity = new Vector2(speedP2, 0);
-     //   }
+        else if (Input.GetKeyDown(KeyCode.RightArrow))
+        {
+			Vector2 posi = transform.position;
+			Vector3Int cell = tilemap3.WorldToCell(posi);
+			Vector3 cellCenter = tilemap3.GetCellCenterWorld(cell);
+			transform.position = cellCenter;
+            rb.velocity = new Vector2(speedP2, 0);
+        }
 
-   //     else if (Input.GetKeyDown(KeyCode.UpArrow))
-   //     {
-   //         rb.velocity = new Vector2(0, speedP2);
-   //     }
-    //    else if (Input.GetKeyDown(KeyCode.DownArrow))
-    //    {
-    //        rb.velocity = new Vector2(0, - speedP2);
-     //   }
+        else if (Input.GetKeyDown(KeyCode.UpArrow))
+        {
+			Vector2 posi = transform.position;
+			Vector3Int cell = tilemap3.WorldToCell(posi);
+			Vector3 cellCenter = tilemap3.GetCellCenterWorld(cell);
+			transform.position = cellCenter;
+            rb.velocity = new Vector2(0, speedP2);
+        }
+        else if (Input.GetKeyDown(KeyCode.DownArrow))
+        {
+			Vector2 posi = transform.position;
+			Vector3Int cell = tilemap3.WorldToCell(posi);
+			Vector3 cellCenter = tilemap3.GetCellCenterWorld(cell);
+			transform.position = cellCenter;
+            rb.velocity = new Vector2(0, - speedP2);
+        }
 
 
-       //if(rb.velocity == 0)
-       //{
-       //   float x = Mathf.Round(transform.position.x);
-       //     float y = Mathf.Round(transform.position.y);
+//       if(rb.velocity == 0)
+//       {
+//          float x = Mathf.Round(transform.position.x);
+//            float y = Mathf.Round(transform.position.y);
+//
+//
+//        }
 
 
-       // }
 
+	//	rb.velocity = new Vector2(Input.GetAxisRaw("HorizontalP2") * speedP2, Input.GetAxisRaw("VerticalP2") * speedP2);   
 
-
-		rb.velocity = new Vector2(Input.GetAxis("HorizontalP2") * speedP2, Input.GetAxis("VerticalP2") * speedP2);   
-
+//		if (rb.velocity.x == 0 && rb.velocity.y == 0) {
+//		
+//			Vector3 posi = rb.position;
+//			Vector3Int cell = tilemap3.WorldToCell(posi);
+//			cell = posi;
+//		    
+//
+//		}
     }
 
     void OnTriggerEnter2D(Collider2D coll)
