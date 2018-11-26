@@ -78,10 +78,10 @@ BoxCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: -0.13432527, y: -2.1423323}
   m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
+    border: {x: 0, y: 0.01, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 3.39, y: 8.93}
-    newSize: {x: 1, y: 1}
+    newSize: {x: 0.57, y: 0.72}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -100,6 +100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 772b08d3c48f5b34387038e99ede62ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tilemap3: {fileID: 0}
 --- !u!114 &114995506952913592
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -112,6 +113,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bombPrefab: {fileID: 1886678921097006, guid: 72608a60a57e553489df90c9ee1b16a0, type: 2}
+  tilemap2: {fileID: 0}
 --- !u!212 &212161728492808762
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -152,7 +154,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.57, y: 0.72}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
