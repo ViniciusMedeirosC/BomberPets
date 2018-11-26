@@ -14,7 +14,7 @@ public class PowerupHealth : MonoBehaviour {
 		
 	}
 
-	void OnCollisionEnter2D(Collision2D coll) 
+	void OnTriggerEnter2D(Collider2D coll) 
 	{
 
 		if (coll.gameObject.CompareTag("P1") && P1Movement.healthP1 < 3)

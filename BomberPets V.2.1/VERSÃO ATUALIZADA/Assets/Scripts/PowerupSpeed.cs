@@ -16,7 +16,7 @@ public class PowerupSpeed : MonoBehaviour {
 	  
 	}
 
-	void OnCollisionEnter2D(Collision2D coll) 
+	void OnTriggerEnter2D(Collider2D coll) 
 	{
 		if (coll.gameObject.CompareTag("P1"))
 		{

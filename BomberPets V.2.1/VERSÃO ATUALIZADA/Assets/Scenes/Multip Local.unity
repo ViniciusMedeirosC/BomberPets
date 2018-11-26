@@ -478,11 +478,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4023488947009974, guid: 266b9b1a8012e4b4bb36fb48c7c9f24c, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 5.091
+      value: 5.0787
       objectReference: {fileID: 0}
     - target: {fileID: 4023488947009974, guid: 266b9b1a8012e4b4bb36fb48c7c9f24c, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -1.25
+      value: -1.8998
       objectReference: {fileID: 0}
     - target: {fileID: 4023488947009974, guid: 266b9b1a8012e4b4bb36fb48c7c9f24c, type: 2}
       propertyPath: m_LocalPosition.z
@@ -510,15 +510,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4023488947009974, guid: 266b9b1a8012e4b4bb36fb48c7c9f24c, type: 2}
       propertyPath: m_LocalScale.y
-      value: 0.21780202
+      value: 0.20569873
       objectReference: {fileID: 0}
     - target: {fileID: 4023488947009974, guid: 266b9b1a8012e4b4bb36fb48c7c9f24c, type: 2}
       propertyPath: m_LocalScale.x
-      value: 0.310158
+      value: 0.2929225
       objectReference: {fileID: 0}
     - target: {fileID: 4023488947009974, guid: 266b9b1a8012e4b4bb36fb48c7c9f24c, type: 2}
       propertyPath: m_LocalScale.z
-      value: 2.3843942
+      value: 2.251893
       objectReference: {fileID: 0}
     - target: {fileID: 114995506952913592, guid: 266b9b1a8012e4b4bb36fb48c7c9f24c,
         type: 2}
@@ -965,6 +965,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1620949709740476, guid: 9fd9039c7126a2a4cabc74a09b52ddd4, type: 2}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 58957692701285114, guid: 9fd9039c7126a2a4cabc74a09b52ddd4,
+        type: 2}
+      propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1446,6 +1451,11 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 61935605556826756, guid: 236fd8fc9633d4746937b1724d297c1b,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 236fd8fc9633d4746937b1724d297c1b, type: 2}
   m_IsPrefabParent: 0
@@ -1499,6 +1509,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1609584477763962, guid: 236fd8fc9633d4746937b1724d297c1b, type: 2}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 61935605556826756, guid: 236fd8fc9633d4746937b1724d297c1b,
+        type: 2}
+      propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -7004,6 +7019,11 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 61935605556826756, guid: 236fd8fc9633d4746937b1724d297c1b,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 236fd8fc9633d4746937b1724d297c1b, type: 2}
   m_IsPrefabParent: 0
@@ -9645,7 +9665,7 @@ GameObject:
   - component: {fileID: 1854601012}
   - component: {fileID: 1854601013}
   m_Layer: 0
-  m_Name: cutmypic (2)
+  m_Name: "bra\xE7o do viol\xE3o"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9736,7 +9756,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
