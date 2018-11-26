@@ -209,8 +209,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -83.01, y: -163.5}
-  m_SizeDelta: {x: 207.97, y: 39}
+  m_AnchoredPosition: {x: 119.95022, y: -94.3}
+  m_SizeDelta: {x: 220.99, y: 41.44}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &270076248
 MonoBehaviour:
@@ -325,7 +325,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &436130314
 RectTransform:
   m_ObjectHideFlags: 0
@@ -341,8 +341,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -188.41, y: -215.76}
-  m_SizeDelta: {x: 205.17, y: 38.47}
+  m_AnchoredPosition: {x: -178, y: -205.9601}
+  m_SizeDelta: {x: 262.58, y: 49.23}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &436130315
 MonoBehaviour:
@@ -685,7 +685,7 @@ ParticleSystemRenderer:
   m_ReflectionProbeUsage: 0
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 10301, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: b5d0f3455f44a9d4e822194fa6a0ca65, type: 2}
   - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -973,7 +973,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 0.5
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -5338,8 +5338,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 224.81, y: -213.96}
-  m_SizeDelta: {x: 224.43, y: 42.08}
+  m_AnchoredPosition: {x: -114.36978, y: -196.3}
+  m_SizeDelta: {x: 249.37, y: 46.75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1639796585
 MonoBehaviour:
@@ -5607,8 +5607,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 25, y: -215.76}
-  m_SizeDelta: {x: 162.99, y: 30.56}
+  m_AnchoredPosition: {x: -98.47, y: -263.8}
+  m_SizeDelta: {x: 196.94, y: 36.93}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1928487135
 MonoBehaviour:
@@ -5657,7 +5657,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Guia
+          m_StringArgument: Instrucoes
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -5681,7 +5681,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: c2763d4c23d96d54c80b1edfc2fee5fb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d653d0d7810df20438b5d3da283fdf6d, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -5729,8 +5729,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 128.12, y: -163.1}
-  m_SizeDelta: {x: 212.24, y: 39.8}
+  m_AnchoredPosition: {x: 92.82924, y: -163.3}
+  m_SizeDelta: {x: 219.42, y: 41.15}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1967584249
 MonoBehaviour:
@@ -5770,7 +5770,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1967584250}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 443546748}
+        m_MethodName: MudarCena
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "Cr\xE9ditos"
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1967584250
