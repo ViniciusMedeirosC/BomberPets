@@ -12,6 +12,7 @@ public class ExpDamage : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 	    expSound = expSound2;
+		expSound2.volume = SliderVolume.explosionVolume;
 		damage = 1;
 		expSound.Play();
 	}

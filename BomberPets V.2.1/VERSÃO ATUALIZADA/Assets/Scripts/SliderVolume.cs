@@ -8,6 +8,7 @@ public class SliderVolume : MonoBehaviour {
 
      public Slider volume;
      public string type;
+	 public static float explosionVolume;
 	 //public AudioSource song;
 	// Use this for initialization
 	void Start () {
@@ -21,7 +22,7 @@ public class SliderVolume : MonoBehaviour {
 		}
 
 		if(type == "efeitos"){
-         ExpDamage.expSound.volume = volume.value;
+			explosionVolume = volume.value;
 		}
 		
 

@@ -1348,7 +1348,7 @@ ParticleSystem:
   ShapeModule:
     serializedVersion: 5
     enabled: 1
-    type: 4
+    type: 18
     angle: 25
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
@@ -1356,7 +1356,7 @@ ParticleSystem:
     donutRadius: 0.2
     m_Position: {x: 0, y: 0, z: 0}
     m_Rotation: {x: 0, y: 0, z: 0}
-    m_Scale: {x: 1, y: 1, z: 1}
+    m_Scale: {x: 20.91, y: 1, z: 1}
     placementMode: 0
     m_MeshMaterialIndex: 0
     m_MeshNormalOffset: 0
@@ -5263,7 +5263,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 861639441}
   m_LocalRotation: {x: 0.6684455, y: -0.10694079, z: -0.097993165, w: 0.7294804}
-  m_LocalPosition: {x: 370.8, y: 219.7, z: 0}
+  m_LocalPosition: {x: 369.7, y: 216.1, z: 0.3}
   m_LocalScale: {x: 0.861038, y: 0.8200364, z: 0.8200364}
   m_Children: []
   m_Father: {fileID: 0}
@@ -5388,7 +5388,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Multip Choose
+          m_StringArgument: Multip Local
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
