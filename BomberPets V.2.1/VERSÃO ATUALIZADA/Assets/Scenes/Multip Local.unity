@@ -9718,7 +9718,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_Sprite: {fileID: 21300000, guid: 3afc185f5e8e1b24485bc9c59ce78f76, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -10158,9 +10158,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   livesP2:
-  - {fileID: 1292333668}
-  - {fileID: 1108437432}
   - {fileID: 1691903927}
+  - {fileID: 1108437432}
+  - {fileID: 1292333668}
 --- !u!4 &1941242877
 Transform:
   m_ObjectHideFlags: 0

@@ -19,7 +19,7 @@ public class P1LocalMove : MonoBehaviour {
 		rb = GetComponent <Rigidbody2D>(); 
 		healthP1 = 3;
         Time.timeScale = 1f;
-		speedP1 = 1;
+		speedP1 = 2.5f;
 	}
 	
 	// Update is called once per frame
