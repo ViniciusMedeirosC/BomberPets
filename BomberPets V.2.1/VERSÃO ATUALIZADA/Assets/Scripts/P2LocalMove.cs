@@ -16,7 +16,7 @@ public class P2LocalMove : MonoBehaviour {
 		canHit = true;
 		rb = GetComponent <Rigidbody2D>(); 
 		healthP2 = 3;
-		speedP2 = 3;
+		speedP2 = 2.5f;
 	}
 	
 	// Update is called once per frame
