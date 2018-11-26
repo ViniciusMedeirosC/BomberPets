@@ -14,7 +14,7 @@ public class BombDrop2 : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKeyDown(KeyCode.RightControl)&& canDrop)
+		if (Input.GetKeyDown(KeyCode.Return)&& canDrop)
 		{
 			Vector2 posi = transform.position;
 			Vector3Int cell = tilemap2.WorldToCell(posi);

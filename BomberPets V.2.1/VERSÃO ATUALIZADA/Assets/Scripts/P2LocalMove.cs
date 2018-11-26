@@ -10,8 +10,10 @@ public class P2LocalMove : MonoBehaviour {
     public static float speedP2;
 	public static int healthP2;
 	public Tilemap tilemap3;
+	private bool canHit;
 
 	void Start () {
+		canHit = true;
 		rb = GetComponent <Rigidbody2D>(); 
 		healthP2 = 3;
 		speedP2 = 3;
@@ -90,12 +92,21 @@ public class P2LocalMove : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D coll)
 	{
-		if (coll.gameObject.CompareTag("Explosion"))
+		if (coll.gameObject.CompareTag("Explosion") && canHit)
 		{
+			
 			healthP2 = healthP2 - ExpDamage.damage;
+			StartCoroutine ("TimeToNextHit");
 			Debug.Log (healthP2 + " p2");
 		}
 	}
 
+	IEnumerator TimeToNextHit()
+	{
 
+		canHit = false; 
+		yield return new WaitForSeconds(2);
+		canHit = true;
+
+	}
 }

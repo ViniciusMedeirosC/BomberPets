@@ -10,10 +10,12 @@ public class P1LocalMove : MonoBehaviour {
 	public static float speedP1;
 	public static int healthP1;
 	public Tilemap tilemap4;
+	private bool canHit;
 
 
 	// Use this for initialization
 	void Start () {
+		canHit = true;
 		rb = GetComponent <Rigidbody2D>(); 
 		healthP1 = 3;
         Time.timeScale = 1f;
@@ -78,12 +80,13 @@ public class P1LocalMove : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D coll)
 	{
-		if (coll.gameObject.CompareTag("Explosion"))
+		if (coll.gameObject.CompareTag("Explosion") && canHit)
 		{
 			healthP1 = healthP1 - ExpDamage.damage;
+			StartCoroutine ("TimeToNextHit");
 			Debug.Log (healthP1  + " p1");
 		}
-
+			
        
     }
 
@@ -95,4 +98,11 @@ public class P1LocalMove : MonoBehaviour {
 
         }
     }
+
+	IEnumerator TimeToNextHit()
+	{
+		canHit = false; 
+		yield return new WaitForSeconds(2);
+		canHit = true;
+	}
 }
